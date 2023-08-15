@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 // eslint-disable-next-line no-undef
 module.exports = {
-  pathPrefix: process.env.PATH_PREFIX || '/',
+  pathPrefix: "/runner_page",//process.env.PATH_PREFIX || '/',
   siteMetadata: {
     siteTitle: 'Running Page',
     siteUrl: 'https://zhaoxing-wu/run',//'https://yihong.run',
