@@ -1,6 +1,6 @@
 // const
 const MAPBOX_TOKEN =
-  'pk.eyJ1IjoieWlob25nMDYxOCIsImEiOiJja2J3M28xbG4wYzl0MzJxZm0ya2Fua2p2In0.PNKfkeQwYuyGOTT_x9BJ4Q';
+  'pk.eyJ1Ijoiend1MzYzIiwiYSI6ImNsbGJtM2FxYTA2emMzbHBsMG94M3Exd2YifQ.ZJdLG5f8SrSpVuVX91zHfg';
 const MUNICIPALITY_CITIES_ARR = [
   '北京市',
   '上海市',
@@ -41,7 +41,8 @@ const CHINESE_INFO_MESSAGE = (yearLength, year) => {
   return `我用 App 记录自己跑步 ${yearLength} 年了，下面列表展示的是${yearStr}的数据`;
 };
 const ENGLISH_INFO_MESSAGE = (yearLength, year) =>
-  `Running Journey with ${yearLength} Years, the table shows year ${year} data`;
+  `I have been using different running app to record my outdoor running activities for ${yearLength} years, and here are all my running activities in ${year}`;
+  //`Running Journey with ${yearLength} Years, the table shows year ${year} data`;
 
 // not support English for now
 const CHINESE_LOCATION_INFO_MESSAGE_FIRST =
