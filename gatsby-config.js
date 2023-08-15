@@ -1,12 +1,13 @@
 /* eslint-disable no-undef */
 // eslint-disable-next-line no-undef
 module.exports = {
-  pathPrefix: "/runner_page",//process.env.PATH_PREFIX || '/',
+  pathPrefix: process.env.PATH_PREFIX || '/',
   siteMetadata: {
     siteTitle: 'Running Page',
     siteUrl: 'https://zhaoxing-wu/run',//'https://yihong.run',
-    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtc69JxHNcmN1ETpMUX4dozAgAN6iPjWalQ&usqp=CAU',
+    //logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtc69JxHNcmN1ETpMUX4dozAgAN6iPjWalQ&usqp=CAU',
     description: 'Personal site and blog',
+    /*
     navLinks: [ //change
       {
         name: 'Blog',
@@ -17,7 +18,7 @@ module.exports = {
         url: 'https://github.com/Zhaoxing-Wu/runner_page/blob/master/README.md',
       },
     ],
-  },
+  },*/
   plugins: [
     'gatsby-transformer-json',
     'gatsby-plugin-react-helmet',
