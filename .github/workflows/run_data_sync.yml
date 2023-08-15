@@ -25,7 +25,7 @@ env:
   ATHLETE: Zhaoxing Wu
   TITLE: Zhaoxing Wu's Running Page
   MIN_GRID_DISTANCE: 1 # change min distance here
-  TITLE_GRID: Over 10km Runs # also here
+  TITLE_GRID: Over 1km Runs # also here
   GITHUB_NAME: Zhaoxing-Wu # change to yours
   GITHUB_EMAIL: zwu363@wisc.edu # change to yours
 
@@ -165,7 +165,7 @@ jobs:
           python scripts/tulipsport_sync.py ${{ secrets.TULIPSPORT_TOKEN }} --with-gpx
 
       - name: Make svg GitHub profile
-        if: env.RUN_TYPE != 'pass'
+        #if: env.RUN_TYPE != 'pass'
         run: |
           python scripts/gen_svg.py --from-db --title "${{ env.TITLE }}" --type github --athlete "${{ env.ATHLETE }}" --special-distance 10 --special-distance2 20 --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --min-distance 0.5
           python scripts/gen_svg.py --from-db --title "${{ env.TITLE_GRID }}" --type grid --athlete "${{ env.ATHLETE }}" --output assets/grid.svg --special-color yellow --special-color2 red --special-distance 20 --special-distance2 40 --use-localtime --min-distance "${{ env.MIN_GRID_DISTANCE }}"
