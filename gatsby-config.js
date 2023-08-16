@@ -17,8 +17,8 @@ module.exports = {
         name: 'About',
         url: 'https://github.com/Zhaoxing-Wu/runner_page/blob/master/README.md',
       },
-    ],
-  },*/
+    ],*/
+  },
   plugins: [
     'gatsby-transformer-json',
     'gatsby-plugin-react-helmet',
