@@ -30,6 +30,7 @@ if __name__ == "__main__":
         help="if is only for running",
     )
     options = parser.parse_args()
+    print(options)
     run_strava_sync(
         options.client_id,
         options.client_secret,
