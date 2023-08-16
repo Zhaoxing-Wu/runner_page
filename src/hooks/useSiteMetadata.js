@@ -9,11 +9,6 @@ const useSiteMetadata = () => {
             siteTitle
             siteUrl
             description
-            logo
-            navLinks {
-              name
-              url
-            }
           }
         }
       }
@@ -23,3 +18,19 @@ const useSiteMetadata = () => {
 };
 
 export default useSiteMetadata;
+
+/*
+query SiteMetaData {
+  site {
+    siteMetadata {
+      siteTitle
+      siteUrl
+      description
+      logo
+      navLinks {
+        name
+        url
+      }
+    }
+  }
+}*/
