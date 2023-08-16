@@ -61,10 +61,11 @@ class Generator:
                 filters = {"before": datetime.datetime.utcnow()}
 
         for activity in self.client.get_activities(**filters):
-            if self.only_run and activity.type != "Run":
+            if self.only_run and "Run" not in activity.name:
                 continue
             if IGNORE_BEFORE_SAVING:
                 activity.summary_polyline = filter_out(activity.summary_polyline)
+            #print(activity.type)
             created = update_or_create_activity(self.session, activity)
             if created:
                 sys.stdout.write("+")
